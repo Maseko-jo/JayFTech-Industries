@@ -6,6 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 5173,
-    host: true
+    // Dev server stays on this computer only. To test on a phone on the same
+    // Wi-Fi, run `npm run dev -- --host` for that session, then stop it.
+    host: 'localhost'
   }
 })
